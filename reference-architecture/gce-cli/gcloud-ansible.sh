@@ -55,4 +55,4 @@ export GCE_EMAIL=${GCLOUD_SERVICE_ACCOUNT}
 export INVENTORY_IP_TYPE=${INVENTORY_IP_TYPE:-external}
 
 pushd "${DIR}/../gce-ansible/"
-ansible-playbook -e "@${DIR}/working/ansible-config.yml" "$@" "playbooks/openshift-install.yaml"
+ansible-playbook -e "@${DIR}/working/ansible-config.yml" "$@" "playbooks/install.yaml"
